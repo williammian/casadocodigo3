@@ -47,7 +47,9 @@
   <header id="layout-header">
     <div class="clearfix container">
         <a href="${s:mvcUrl('HC#index').build() }" id="logo">
+        <div id="bloco_logo">
           <img src="${imagensPath}/cdc-logo.svg" alt="Casa do Codigo">
+        </div>
         </a>
       <div id="header-content">
         <nav id="main-nav">

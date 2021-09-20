@@ -1,0 +1,25 @@
+Ao utilizarmos o serviço do Elastic Beanstalk temos que realizar a configuração de um ambiente. 
+O que seria um ambiente do Elastic Beanstalk?
+
+Um ambiente é o local de configuração do Elastic Beanstalk para alocar os recursos necessários 
+para que nossa aplicação seja publicada.
+
+Um ambiente é o local de configuração do Elastic Beanstalk para alocar os recursos da Amazon 
+que são necessários para publicar nossa aplicação. 
+Dessa forma, esse ambiente se encarregará de configurar o servidor, liberar portas de comunicação, 
+instalar a plataforma necessária, etc com o objetivo de realizar a publicação de forma mais rápida e 
+com menos passos de configuração pelo usuário.
+
+---------------------------------------------------------
+
+Qual seria uma das principais motivações ao utilizarmos o serviço do Elastic Beanstalk da Amazon?
+
+Abstrair a parte de configuração da infraestrutura necessária para que nossa aplicação funcione.
+
+O serviço do Elastic Beanstalk teria como objetivo abstrair boa parte de configuração
+da infraestrutura que seria necessária para que nossa aplicação funcione. 
+Dessa forma, será responsabilidade do Elastic Beanstalk subir um servidor, 
+fazer updates de seguranças, configurar a plataforma, liberar portas de acesso, 
+configurar o balanceamento de cargas, etc.
+
+---------------------------------------------------------

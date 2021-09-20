@@ -8,7 +8,6 @@
 
 <tags:pageTemplate
 	titulo="Livros de Java, Android, iOS, Mobile, e muito mais...">
-
 	<section id="index-section" class="container middle"
 		style="margin-top: 3em">
 		<ul class="clearfix book-collection">

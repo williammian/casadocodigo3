@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.casadocodigo</groupId>
-	<artifactId>casadocodigo</artifactId>
+	<groupId>org.casadocodigo3</groupId>
+	<artifactId>casadocodigo3</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<properties>
@@ -102,7 +102,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.15</version>
+			<version>8.0.15</version>
 		</dependency>
 
 		<!-- JSR 303 with Hibernate Validator -->
@@ -227,7 +227,7 @@
 	</repositories>
 
 	<build>
-		<finalName>casadocodigo</finalName>
+		<finalName>casadocodigo3</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>

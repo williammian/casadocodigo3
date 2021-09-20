@@ -669,3 +669,15 @@ h3,h1{
 .breadcrumbs {
     display: block;
 }
+
+#bloco_logo{
+	width:270px;
+	display: inline-block;
+	position:relative;
+}
+
+#black_friday{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
