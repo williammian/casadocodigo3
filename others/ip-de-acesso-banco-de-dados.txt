@@ -1,0 +1,10 @@
+Ao realizarmos a configuração do banco de dados pelo painel de console do serviço Relational Database Service (RDS) 
+ocorre a liberação de um endereço IP para acessar tal instância. 
+Por padrão qual é esse endereço IP?
+
+É o endereço IP público fornecido pelo provedor de serviços para a nossa localidade.
+
+A comunicação na internet é realizada através do endereço IP público, ao realizarmos a configuração no painel de console, 
+a Amazon por padrão irá detectar qual o endereço IP público de origem responsável por essa configuração e 
+liberará por padrão o acesso para esse endereço IP público, que é o endereço IP público fornecido por nosso 
+provedor de serviço quando contratamos um serviçod de acesso a internet.

@@ -1,0 +1,7 @@
+Você precisa criar um bucket na Amazon para guardar as imagens que serão cadastradas em sua aplicação. Para criar esse bucket, 
+você decide dar o nome imagem-casadocodigo, porém outro usuário da sua empresa que tem sua conta 
+na Amazon já criou esse bucket com o mesmo nome, o que acontece nesse caso?
+
+O bucket não será criado, pois não podemos ter dois buckets com o mesmo nome na Amazon.
+
+A Amazon não permite que seja criado dois buckets com o mesmo nome, mesmo que os buckets tenham sido criados por usuários diferentes.

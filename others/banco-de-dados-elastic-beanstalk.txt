@@ -1,0 +1,9 @@
+De acordo com a documentação da Amazon, ao fazermos a configuração para o ambiente de produção utilizando o Elastic Beanstalk, 
+a configuração do banco de dados deve ser feita através do serviço Relational Database Service (RDS). Por quê?
+
+Isso ocorre porque ao configurarmos o banco de dados com o ambiente do Elastic Beanstalk tal instância ficará acoplada com esse ambiente.
+
+Todos os recursos alocados pelo Elastic Beanstalk só irão existir enquanto o ambiente estiver ativo. 
+Ao removermos o ambiente todos os recursos inclusive o banco de dados ficaria indisponível. 
+Dessa forma, se tivermos outros ambientes do Elastic Beanstalk ou outros serviços da Amazon 
+que precisem acessar o banco, tal acesso não seria mais possível.

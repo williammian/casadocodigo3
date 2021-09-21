@@ -1,0 +1,7 @@
+Durante a etapa de configuração do Elastic Beanstalk tínhamos uma etapa da configuração referente as permissões (Roles) 
+que o Elastic Beanstalk irá possuir. Qual seria exatamente o papel de uma Role?
+
+O papel de uma Role é o de permitir que um serviço da Amazon tenha a permissão de acessar e configurar recursos de outro serviço.
+
+O papel da Role seria o de fornecer as permissões necessárias para que um serviço da Amazon faça a configuração e acesso de outro serviço da Amazon. 
+No caso do Elastic Beanstalk, esse serviço precisa interagir diretamente com o serviço do EC2 para poder configurar os servidores.
