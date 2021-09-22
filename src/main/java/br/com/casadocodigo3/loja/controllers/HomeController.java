@@ -6,8 +6,6 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -35,9 +33,9 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public ModelAndView index(HttpServletRequest  request) {
-		if(!request.getServletContext().getServerInfo().contains("9.0")){
-			throw new RuntimeException("Versão incompatível do Tomcat!");
-		}
+		//if(!request.getServletContext().getServerInfo().contains("9.0")){
+		//	throw new RuntimeException("Versão incompatível do Tomcat!");
+		//}
 		
 		
 		List<Produto> produtos = produtoDao.listar();

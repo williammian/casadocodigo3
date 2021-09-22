@@ -37,7 +37,7 @@ public class JPAConfiguration {
 		Properties props = new Properties();
 		props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
 		props.setProperty("hibernate.show_sql", "true");
-		props.setProperty("hibernate.hbm2ddl.auto", "create");
+		props.setProperty("hibernate.hbm2ddl.auto", "update");
 		return props;
 	}
 
@@ -48,7 +48,18 @@ public class JPAConfiguration {
 		dataSource.setUsername(System.getProperty("USUARIO"));
 		dataSource.setPassword(System.getProperty("SENHA"));
 		dataSource.setUrl(System.getProperty("JDBC_CONNECTION_STRING"));
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+		return dataSource;
+	}
+	
+	@Bean
+	@Profile("prod1")
+	public DataSource dataSourceProd1() {
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		dataSource.setUsername("root");
+		dataSource.setPassword("casadocodigo");
+		dataSource.setUrl("jdbc:mysql://banco-casadocodigo.cftptunzkrem.us-east-1.rds.amazonaws.com:3306/casadocodigo?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true");
+		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		return dataSource;
 	}
 	
@@ -59,7 +70,7 @@ public class JPAConfiguration {
 		dataSource.setUsername("root");
 		dataSource.setPassword("root");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/casadocodigo3?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true");
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		return dataSource;
 	}
 	
