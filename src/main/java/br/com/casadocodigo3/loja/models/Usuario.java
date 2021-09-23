@@ -8,12 +8,15 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
+@Table(name = "usuario")
 public class Usuario implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
@@ -26,6 +29,7 @@ public class Usuario implements UserDetails {
 	private String nome;
 	
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
+	@JoinTable(name = "usuario_role")
 	private List<Role> roles = new ArrayList<Role>();
 
 	public String getEmail() {

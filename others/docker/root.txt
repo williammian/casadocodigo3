@@ -1,0 +1,7 @@
+Ao realizar a configuração do projeto da Casa do Código, optamos por realizar a exportação para o arquivo chamado ROOT.war. 
+Por quê utilizamos esse nome?
+
+O tomcat irá carregar como projeto raiz o projeto com nome ROOT, queremos que o projeto da Casa do Código seja o projeto raiz.
+
+O projeto ROOT é o projeto que será carregado por padão assim que o Tomcat for inicializado,
+como queremos que o projeto da Casa do Código seja o projeto raiz, alteramos o nome do arquivo para ROOT.war.

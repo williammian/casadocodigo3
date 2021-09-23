@@ -1,0 +1,10 @@
+Ao levarmos o projeto da aplicação para o ambiente de produção da Amazon através do serviço do Elastic Beanstalk 
+nós tivemos um problema com a versão do Tomcat e não foi possível assim acessar a aplicação. 
+Como o Docker conseguirá ajudar a resolver esse problema?
+
+Com o Docker podemos montar uma imagem customizada de nossa aplicação, dessa forma, através dessa imagem customizada conseguimos 
+montar um container que funcionará da mesma forma independetemente do ambiente.
+
+O Docker permite que nós criemos imagens customizadas com todas as dependências necessárias para nossa aplicação, 
+dessa forma através dessas imagens nós podemos configurar containers que terão o mesmo funcionamento independetemente do ambiente.
+
