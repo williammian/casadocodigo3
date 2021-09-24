@@ -27,7 +27,12 @@ public class FileSaver {
 	@Profile("prod")
 	public String writeProd(MultipartFile file) {
 		try {
-			String bucket=System.getProperty("BUCKET");
+			//parametros informados na configuração do beanstalk / software / propriedades de ambiente (tomcat passava essa informacao)
+			//String bucket=System.getProperty("BUCKET");
+			
+			//parametros informados na configuração propriedades de ambiente (container do docker)
+			String bucket=System.getenv("BUCKET");
+			
 			amazonS3.putObject(new PutObjectRequest(bucket, 
 					file.getOriginalFilename(), file.getInputStream(),null)
 					.withCannedAcl(CannedAccessControlList.PublicRead));

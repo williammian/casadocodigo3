@@ -44,10 +44,21 @@ public class JPAConfiguration {
 		props.setProperty("spring.jpa.hibernate.ddl-auto", "none");
 		return props;
 	}
+	
+	@Bean
+	@Profile("prod") //parametros informados na configuração propriedades de ambiente (container do docker)
+	public DataSource dataSourceProd() {
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		dataSource.setUsername(System.getenv("USUARIO"));
+		dataSource.setPassword(System.getenv("SENHA"));
+		dataSource.setUrl(System.getenv("JDBC_CONNECTION_STRING"));
+		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+		return dataSource;
+	}
 
 	@Bean
-	@Profile("prod")
-	public DataSource dataSourceProd() {
+	@Profile("prod1") //parametros informados na configuração do beanstalk / software / propriedades de ambiente (tomcat passava essa informacao)
+	public DataSource dataSourceProd1() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUsername(System.getProperty("USUARIO"));
 		dataSource.setPassword(System.getProperty("SENHA"));
@@ -57,8 +68,8 @@ public class JPAConfiguration {
 	}
 	
 	@Bean
-	@Profile("prod1")
-	public DataSource dataSourceProd1() {
+	@Profile("prod2") //parametros informados diretamente
+	public DataSource dataSourceProd2() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUsername("root");
 		dataSource.setPassword("casadocodigo");
@@ -68,7 +79,7 @@ public class JPAConfiguration {
 	}
 	
 	@Bean
-	@Profile("dev")
+	@Profile("dev") //parametros informados via variaveis de ambiente (utilizados pelo container do docker)
 	public DataSource dataSourceDev() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUsername(System.getenv("USUARIO"));
@@ -79,7 +90,7 @@ public class JPAConfiguration {
 	}
 	
 	@Bean
-	@Profile("dev1")
+	@Profile("dev1") //parametros informados diretamente
 	public DataSource dataSourceDev1() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUsername("root");

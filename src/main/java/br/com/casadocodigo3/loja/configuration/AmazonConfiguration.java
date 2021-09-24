@@ -28,8 +28,13 @@ public class AmazonConfiguration {
 			access_key = "";
 			secret_key = "";
 		} else {
-			access_key = System.getProperty("ACCESS_KEY");
-			secret_key = System.getProperty("SECRET_KEY");
+			//parametros informados na configuração do beanstalk / software / propriedades de ambiente (tomcat passava essa informacao)
+			//access_key = System.getProperty("ACCESS_KEY");
+			//secret_key = System.getProperty("SECRET_KEY");
+			
+			//parametros informados na configuração propriedades de ambiente (container do docker)
+			access_key = System.getenv("ACCESS_KEY");
+			secret_key = System.getenv("SECRET_KEY");
 		}
 		return new BasicAWSCredentials(access_key, secret_key);
 	}
