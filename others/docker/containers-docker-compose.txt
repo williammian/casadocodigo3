@@ -1,0 +1,23 @@
+Você está analisando o seguinte arquivo docker-compose.yaml:
+
+
+version: "3.0"
+services:
+  container_mysql:
+    image: mysql
+
+  container_casadocodigo:
+    image: casadocodigo:v1-dev
+    ports:
+      - 80:8080
+    depends_on:
+      - container_mysql
+      
+      
+Qual dos dois containers será inicializado primeiro e por qual motivo?
+
+Será o container com nome container_mysql, pois o container_casadocodigo, possui em sua configuração uma dependência atrelada ao container_mysql
+
+Uma vez que na configuração do container com nome container_casadocodigo temos a chave depends_on, 
+isso indica que tal container depende de que seja inicializado primeiro o container com nome container_mysql para funcionar, 
+com isso será inicializado primeiro o container com nome container_mysql, conforme especificado na resposta.

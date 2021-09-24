@@ -1,0 +1,29 @@
+version: "3.0"
+services:
+  container_mysql:
+    image: mysql
+    healthcheck:
+      test: mysql --protocol=socket -hlocalhost -uroot -p$$MYSQL_ROOT_PASSWORD -e 'SELECT 1'
+    environment:
+      MYSQL_DATABASE: "casadocodigo"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+#     MYSQL_ROOT_PASSWORD: "your_password"
+#     MYSQL_USER = "root"
+#     MYSQL_PASSWORD = "your_password"
+#     MYSQL_DATABASE = "casadocodigo"
+
+    ports:
+      - 3306:3306
+
+  container_casadocodigo:
+    image: casadocodigo:v1-dev
+    ports:
+      - 80:8080
+    environment:
+      USUARIO: "root"
+      SENHA: ""
+      JDBC_CONNECTION_STRING: "jdbc:mysql://container_mysql:3306/casadocodigo?serverTimezone=UTC"
+    depends_on:
+      container_mysql:
+        condition: service_healthy

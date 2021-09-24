@@ -1,0 +1,17 @@
+Ao analisar o trecho docker-compose para realizar o teste local:
+
+version: "3.0"
+services:
+  container_casadocodigo:
+    image: casadocodigo:v1
+    ports:
+      - 80:8080
+      
+      
+      
+Qual das alternativas abaixo seria a correta?
+
+Estamos realizando o mapeamento da porta 8080 do container para a porta 80 da máquina host.
+
+O valor da chave ports é 80:8080, o valor da direita seria referente a porta do container enquanto que o valor esquerdo seria da máquina host. 
+Dessa forma, estamos fazendo o mapeamento da porta 8080 do container para a porta 80 da máquina host.
