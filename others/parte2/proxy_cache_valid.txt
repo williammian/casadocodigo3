@@ -1,0 +1,32 @@
+
+Ao realizar a configuração do NGINX para fazer o cacheamento dos dados de nossa aplicação temos o seguinte trecho de configuração:
+
+
+proxy_cache_valid 200 5m;
+
+
+O que esse trecho irá realizar?
+
+Esse trecho irá realizar o cacheamento dos dados quando tivermos uma resposta de sucesso (OK) por um período de 5 minutos.
+
+O comando proxy_cache_valid é responsável por configurar o cacheamento dos dados associando o código HTTP 
+com um determinado período de tempo de armazenamento. Repare que estamos usando o código HTTP 200, 
+que seria um indicado de sucesso na resposta do servidor e estamos estipulando o valor 5m que seria referente a 5 minutos, 
+portanto o cacheamento deverá ser realizado quando tivermos um retorno HTTP 200 por um período de 5 minutos.
+
+
+---------------------------------------------
+
+Você está trabalhando juntamente com um colega no arquivo de configuração do NGINX, em um determinado trecho do arquivo de configuração nós temos:
+
+
+add_header X_Proxy_Cache $upstream_cache_status;
+
+
+O que esse trecho está realizando?
+
+Esse trecho irá adicionar um cabeçalho na resposta com o nome X-Proxy-Cache o qual irá conter as informações se estamos ou não acessando o conteúdo cacheado.
+
+Com esse comando iremos adicionar um cabeçalho na resposta com o nome X-Proxy-Cache o qual irá retornar 
+o status informando se estamos acessando o conteúdo cacheado ou não, conforme especificado na resposta.
+

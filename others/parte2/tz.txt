@@ -1,0 +1,9 @@
+Você está trabalhando juntamente com um colega para realizar um teste local com o Docker, para isso, 
+vocês estão trabalhando com o arquivo docker-compose.yaml para subir os containers de sua aplicação. 
+Ao analisar o arquivo docker-compose.yaml, você repara uma variável de ambiente TZ. 
+O que faz essa variável de ambiente?
+
+Com essa variável de ambiente nós iremos passar a zona horária que deverá ser utilizada por nosso container.
+
+A variável de ambiente TZ é utilizada para passar uma zona horária de nossa preferência, dessa forma, 
+o container irá utilizar essa zona horária para mostrar resultados para análise.
