@@ -1,0 +1,24 @@
+{
+  "AWSEBDockerrunVersion": "2",
+  "containerDefinitions": [
+    {
+      "name": "container_casadocodigo",
+      "image": "williammian/casadocodigo:v1-prod",
+      "memory": 256
+    },
+    {
+      "name": "container_nginx",
+      "image": "williammian/nginx_casadocodigo:v1-prod",
+      "memory": 256,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": [
+        "container_casadocodigo"
+      ]
+    }
+  ]
+}

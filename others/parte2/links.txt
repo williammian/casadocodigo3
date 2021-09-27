@@ -1,0 +1,9 @@
+
+Durante o processo de configuração do arquivo Dockerrun.aws.json para trabalharmos com dois
+containers Docker no ambiente do Elastic Beanstalk tínhamos a chave links. 
+O que essa chave representa?
+
+Essa chave é responsável por estabelecer um vínculo de um container para outro.
+
+A chave links é responsável por especificar o vínculo de um container com outro container, 
+sendo assim possível estabelecer a comunicação entre ele, conforme especificado na resposta.
