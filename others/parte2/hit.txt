@@ -1,0 +1,7 @@
+
+Ao analisar a resposta que tivemos da aplicação da Casa do Código, nós tivemos o status do NGINX igual a HIT. 
+O que esse status HIT indica para nós?
+
+O status HIT indica que o retorno obtido foi do cacheamento realizado pelo NGINX.
+
+O status HIT é um status do NGINX indicando que a resposta a requisição foi obtida diretamente do conteúdo cacheado pelo NGINX, conforme especificado pela resposta.

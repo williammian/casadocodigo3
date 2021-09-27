@@ -12,8 +12,6 @@ services:
 
   container_casadocodigo:
     image: casadocodigo:v1-dev
-    ports:
-      - 80:8080
     environment:
       USUARIO: "root"
       SENHA: ""
@@ -22,3 +20,10 @@ services:
     depends_on:
       container_mysql:
         condition: service_healthy
+
+  container_nginx:
+    image: nginx_casadocodigo:v1-dev
+    ports:
+      - 80:80
+    depends_on:
+      - container_casadocodigo

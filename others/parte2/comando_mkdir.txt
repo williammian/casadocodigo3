@@ -1,0 +1,15 @@
+
+Ao montarmos o arquivo Dockerfile para termos a imagem customizada do NGINX, nós tínhamos o comando
+
+
+RUN mkdir -p /var/lib/nginx/cache
+
+
+O que esse comando está realizando e porquê precisamos dele no Dockerfile?
+
+Esse comando irá criar o diretório /var/lib/nginx/cache, nós precisamos desse diretório, 
+pois no arquivo de configuração do NGINX estamos salvando o conteúdo cacheado da aplicação nesse diretório.
+
+No arquivo de configuração que montamos do NGINX, havíamos colocado proxy_cache_path /var/lib/nginx/cache 
+indicando assim justamente o diretório o qual os dados cacheados serão armazenados, por padrão esse diretório não existe, 
+sendo necessário assim criá-lo e fazemos isso através do comando mkdir -p /var/lib/nginx/cache
