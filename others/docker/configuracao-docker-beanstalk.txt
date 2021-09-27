@@ -1,0 +1,29 @@
+Para configurarmos o Elastic Beanstalk para trabalhar com um container com a aplicação da Casa do Código, 
+nós precisamos montar um arquivo chamado Dockerrun.aws.json, sabendo que a imagem customizada foi configurada 
+com o Tomcat que por padrão utiliza a porta de comunicação 8080, o que podemos concluir do arquivo de configuração abaixo?
+
+
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "williammian/casadocodigo:v1-prod",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "hostPort": 80,
+      "ContainerPort": 8080
+    }
+  ]
+}
+
+
+Podemos concluir que para acessar a aplicação devemos simplesmente acessar 
+a URL do Elastic Beanstalk e devemos ser capazes assim de visualizar a aplicação.
+
+
+Como estamos fazendo o mapeamento da porta 8080 do container para a porta 80 da máquina host, 
+para que façamos o acesso da aplicação basta colocarmos no browser a URL de acesso fornecida 
+pelo Elastic Beanstalk, conforme especificado na resposta.
+
+
