@@ -1,0 +1,8 @@
+Na etapa de configuração do ambiente do Elastic Beanstalk nós executamos o comando abaixo:
+
+aws elasticbeanstalk check-dns-availability --cname-prefix casadocodigo-docker-multi
+
+Com esse comando estamos fazendo uma verificação se o prefixo de acesso do ambiente está disponível para ser utilizado.
+
+Repare que o comando que utilizamos é o check-dns-availability, esse comando tem como objetivo fazer uma verificação 
+se o prefixo de acesso ao ambiente está disponível para ser utilizado.

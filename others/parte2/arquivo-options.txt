@@ -1,0 +1,8 @@
+Ao configurar o ambiente no Elastic Beanstalk através do terminal nós montamos o arquivo options.txt.
+Qual o objetivo de nós termos criado esse arquivo?
+
+Com o arquivo options.txt nós configuramos a Role que deverá ser utilizada pelo Elastic Beanstalk bem como a chave de acesso ao servidor.
+
+Através do arquivo options.txt nós passamos a informação de qual a Role deverá ser utilizada pelo Elastic Beanstalk 
+para que seja possível assim que o Elastic Beanstalk faça a interação com o serviço do EC2 para a configuração do servidor 
+bem como a chave de acesso que deverá ser utilizada para acessar o servidor.

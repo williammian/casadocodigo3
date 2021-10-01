@@ -1,0 +1,12 @@
+[
+    {
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "OptionName": "IamInstanceProfile",
+        "Value": "aws-elasticbeanstalk-ec2-role"
+    },
+    {
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "OptionName": "EC2KeyName",
+        "Value": "chave_ec2_casadocodigo_1"
+    }
+]

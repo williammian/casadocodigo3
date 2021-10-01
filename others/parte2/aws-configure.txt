@@ -1,0 +1,10 @@
+Para que fosse possível realizar a interação com os serviços da Amazon através do terminal, foi necessário nós utilizarmos o comando aws configure. 
+Quais informações nós precisamos passar nessa configuração para que seja assim possível realizar as interações com os serviços da Amazon?
+
+Nós devemos passar as informações da chave de acesso, chave de segredo, região da Amazon e formato de saída dos dados retornados pela Amazon.
+
+Para que seja possível realizar a configuração do terminal para interagir com os serviços da Amazon é necessário nós passarmos
+as credenciais fornecidas pela Amazon que são elas chaves de acesso e chave de segredo. 
+Além disso, precisamos também informar qual a região da Amazon que iremos utilizar para configurar esses serviços e 
+por fim precisamos passar como queremos visualizar os dados de saída que a Amazon vai nos retornar para que possamos assim saber
+o que está acontecendo nesse processo de configuração pelo terminal.
