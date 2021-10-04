@@ -1,0 +1,7 @@
+Durante o processo de configuração para interagir com o ambiente do Elastic Beanstalk através do terminal, 
+foi necessário digitar o comando eb deploy, para que serve esse comando?
+
+Esse comando serve para realizar a publicação do projeto para o ambiente do Elastic Beanstalk.
+
+Através do comando eb deploy estamos realizando a publicação do projeto presente em um diretório para o ambiente do Elastic Beanstalk, 
+conforme especificado na resposta.

@@ -1,0 +1,4 @@
+eb init --interactive
+
+
+eb depoy

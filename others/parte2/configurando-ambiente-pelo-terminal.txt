@@ -1,8 +1,16 @@
+Listar soluções stack
+
+aws elasticbeanstalk list-available-solution-stacks
+
+-----------------------
+
+Checar dns
+
 aws elasticbeanstalk check-dns-availability --cname-prefix casadocodigo-docker-multi-wm
 
 -----------------------
 
-aws elasticbeanstalk create-environment --application-name "casadocodigo-docker-wm" --environment-name "casadocodigo-docker-multi-wm" --solution-stack-name "64bit Amazon Linux 2018.03 v2.26.4 running Multi-container Docker 19.03.13-ce (Generic)" --option-settings file://options.txt
+aws elasticbeanstalk create-environment --application-name "casadocodigo-docker-wm" --environment-name "casadocodigo-docker-multi-wm" --solution-stack-name "64bit Amazon Linux 2018.03 v2.26.5 running Multi-container Docker 19.03.13-ce (Generic)" --option-settings file://options.txt
 
 -----------------------
 
