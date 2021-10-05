@@ -1,0 +1,9 @@
+
+Ao configurarmos as políticas de escalonamento, nós havíamos configurado o limiar de requisições para 20
+e havíamos configurado o incremento para -1. O que seria exatamente esse -1?
+
+Esse valor -1 refere a remoção de um servidor ao atingir o limiar de 20 requisições, ou seja, se temos dois servidores, 
+ao atingir o limiar de 20 requisições, passaremos a ter somente um servidor.
+
+Ao configurarmos o incremento na política de escalonamento como sendo -1, estamos na verdade referenciando um decremento, 
+ou seja, caso tenhamos dois servidores, ao atingirmos 20 requisições, teremos o decrement de um servidor, conforme especificado na resposta.

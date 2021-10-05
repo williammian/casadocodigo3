@@ -1,0 +1,13 @@
+Ao fazermos o teste com o Apache Bench, realizamos o seguinte teste:
+
+ab.exe -n 10 [URL do Elastic Beanstalk]
+
+O que seria essa opção -n?
+
+Trata-se da quantidade de requisições que serão executadas pelo Apache Bench, totalizando assim um número de 10 requisições.
+
+A opção -n seria referente ao número de requisições realizadas, no exemplo temos o valor 10 o que seria referente a um teste com 10 requisições.
+
+-----------------------------------------------------
+
+C:\xampp\apache\bin>ab.exe -n 700 http://casadocodigo-docker-multi-wm.ebb-p6whywii.us-east-1.elasticbeanstalk.com/

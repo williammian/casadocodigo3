@@ -1,0 +1,13 @@
+Escalonamento
+
+Quando temos o acesso de nossa aplicação por vários usuários, torna-se importante realizarmos o escalonamento 
+com o objetivo assim de garantir que a nossa aplicação sempre esteja disponível para todos os usuários. 
+Como é feito o processo de escalonamento no Elastic Beanstalk?
+
+O Elastic Beanstalk oferece a possibilidade de configurarmos a política de escalonamento. 
+Fazemos isso através do painel de configuração do ambiente, na aba Scaling.
+
+Uma vez que o Elastic Beanstalk realiza a abstração da configuração da infraestrutura necessária para que nossa aplicação funcione, 
+teremos a possibilidade de configurar o escalonemtno de nossa aplicação diretamente por esse serviço. 
+Para isso, é necessário irmos até o ambiente que temos configurado, clicar na aba Configuration e depois selecionar 
+a opção de configuração de escalonamento, na aba Scaling.
