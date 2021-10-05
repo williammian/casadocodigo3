@@ -1,0 +1,3 @@
+eb setenv USUARIO=root SENHA=casadocodigo JDBC_CONNECTION_STRING=jdbc:mysql://[Endpoint banco de dados]:3306/casadocodigo 
+ACCESS_KEY=[Chave de acesso] SECRET_KEY=[Chave de segredo] BUCKET=imagens-casadocodigo-[meu nome]
+

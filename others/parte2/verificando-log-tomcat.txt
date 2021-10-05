@@ -1,0 +1,11 @@
+Verificando log tomcat
+
+Abrir pelo putty
+
+sudo docker ps
+
+sudo docker exec -it ecs-awseb-casadocodigo-docker-multi-wm-mt3smypm6h-11-containercasadocodigo-eadf84d48ec6bcf51100 bash
+
+cd logs
+
+cat localhost.2021-10-05.log
