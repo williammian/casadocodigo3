@@ -22,8 +22,8 @@ public class AmazonConfiguration {
 	private String secret_key;
 	private String region="us-east-1";
 	
-	//ACCESS_KEY=AKjAXKDXFOYMGI5HJQKT
-	//SECRET_KEY=sJ402vtXe5uwwRG590wcvUaYR7ym6Zt8NfiabKs/
+	//ACCESS_KEY=ABCDEFGHIJKLMNOPQRST
+	//SECRET_KEY=aB402cdEf5ghiJK590lmnOpQR7st6Uv8XzabcDe/
 
 	@Bean
 	public BasicAWSCredentials basicAWSCredentials() {
