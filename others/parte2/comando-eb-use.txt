@@ -1,0 +1,5 @@
+Qual seria o comando utilizado no terminal para selecionar outro ambiente em uma aplicação no Elastic Beanstalk?
+
+O comando seria eb use
+
+O comando eb use é utilizado para selecionar um ambiente diferente em nossa aplicação do Elastic Beanstalk conforme especificado na resposta.

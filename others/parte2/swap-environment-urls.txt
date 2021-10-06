@@ -1,0 +1,7 @@
+Ao clonar o ambiente original da Casa do Código, nós selecionamos em um momento 
+posterior a opção Swap Environment URLs, o que essa opção irá realizar?
+
+Essa opção irá realizar a troca das URLs de acesso entre os dois ambientes.
+
+O botão Swap Environment URLs é responsável por realizar a troca de URLs entre os dois ambientes, 
+o original e o clonado, conforme especificado na resposta.

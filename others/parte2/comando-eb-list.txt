@@ -1,0 +1,9 @@
+Nós utilizamos o comando eb list para listar os ambientes presentes em uma aplicação do Elastic Beanstalk.
+
+O que seria o símbolo do * presente no resultado?
+
+O símbolo do asterisco seria referente ao ambiente atual que estamos utilizando.
+
+Ao utilizarmos o comando eb list nós temos as listagens dos ambientes presentes em nossa aplicação no Elastic Beanstalk.
+
+O símbolo do asterisco é utilizado para determinar qual ambiente está sendo utilizado no momento, conforme especificado na resposta.
