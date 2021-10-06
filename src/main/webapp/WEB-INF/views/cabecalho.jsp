@@ -49,6 +49,7 @@
         <a href="${s:mvcUrl('HC#index').build() }" id="logo">
         <div id="bloco_logo">
           <img src="${imagensPath}/cdc-logo.svg" alt="Casa do Codigo">
+          <img id="black_friday" src="<c:url value="/resources/imagens/black_friday.png"/>"/>
         </div>
         </a>
       <div id="header-content">
