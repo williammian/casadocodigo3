@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "container_casadocodigo",
-      "image": "williammian/casadocodigo:v2-prod",
+      "image": "williammian/casadocodigo:v3-prod",
       "memory": 256
     },
     {
